@@ -2,8 +2,11 @@ Goal: Create WinLocker program
 
 TODO list:
 	1. Study how to work with git platform:
-		1.1. Install git extension for sublime text.
+		1.1. Install git extension for sublime text. --DONE--
+			1.1.1. Install GitSavvy package - https://www.youtube.com/watch?v=HLU_D8ZiqRs. --DONE--
+			1.1.2. Install Linux git package.
+			1.1.3. Create PAT-key for pushing changes into repo - (git config credential.helper store - https://git-scm.com/docs/git-credential-store, what is pat an how to create it - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). --DONE--
 		1.2  Understand how to work with git system:
-			1.2.1. Create repository
-			1.2.2. Link sublime text with repository
-			1.2.3. Understand how to do pulls/commitments and etc.
+			1.2.1. Create repository. --DONE--
+			1.2.2. Link sublime text with repository. --DONE--
+			1.2.3. Understand how to do pull/push/commit/view changes - (git commands - https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html, GitSavvy general guide - https://www.youtube.com/watch?v=HLU_D8ZiqRs). --DONE--
