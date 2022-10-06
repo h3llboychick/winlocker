@@ -1,0 +1,9 @@
+Goal: Create WinLocker program
+
+TODO list:
+	1. Study how to work with git platform:
+		1.1. Install git extension for sublime text.
+		1.2  Understand how to work with git system:
+			1.2.1. Create repository
+			1.2.2. Link sublime text with repository
+			1.2.3. Understand how to do pulls/commitments and etc.
