@@ -14,3 +14,9 @@ TODO list:
 	2. Study Winlocker working mechanism.
 		2.1. Create basic scheme of working. --DONE--
 		2.2. Populate scheme with new details and amendments.
+	3. Learn how to create basic GUI with PySimpleGUI.
+		3.1 Install PySimpleGUI.
+		3.2 Learn how to create basic elements and layout them.
+		3.3 Learn how to customize elements. 
+			3.3.1 sg.set_theme method - (sg.set_theme("sdfasfasfasfd") to get all availible themes).
+			3.3.2 sg.set_options(global, file-level options) - (options list - https://www.pysimplegui.org/en/latest/call%20reference/#application-wide-configuration-settings-set_options-etc).
