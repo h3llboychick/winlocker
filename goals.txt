@@ -32,3 +32,4 @@ TODO list:
 			2. Explain workflow of the main flow
 			3. Add basic stuff about element customization.
 			4. Start chapter 4(about creating graphical backbone of the project)
+			5. Read about sg.Window().Finalize() method
