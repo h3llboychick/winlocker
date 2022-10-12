@@ -10,7 +10,8 @@ def create_window(theme):
 				justification = 'right', 
 				expand_x = True, 
 				pad = (10, 20),
-				right_click_menu = theme_menu)
+				right_click_menu = theme_menu,
+				key = "-TEXT-")
 			#sg.Push(), sg.Text("output", font = 'Franklin 26') - making element stick to the right side with sg.Push() elemenet
 			],
 			[sg.Button("Clear", expand_x = True), sg.Button("Enter", expand_x = True)],
@@ -24,7 +25,7 @@ def create_window(theme):
 
 theme_menu = ['menu', ['dark', 'LightGrey1', 'dark', 'DarkGray8', 'random']]
 window = create_window('dark')
-
+current_exp = ""
 while True:
 	event, value = window.read()
 	if event == sg.WIN_CLOSED:
@@ -32,4 +33,13 @@ while True:
 	if event in theme_menu[1]:
 		window.close()
 		window = create_window(event)
+	if event in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "*", "/"]:
+		current_exp += event
+		window["-TEXT-"].update(current_exp.split("+")[-1].split("*")[-1].split("/")[-1].split("-")[-1])
+	if event in ["Enter"]:
+		window["-TEXT-"].update(eval(current_exp))
+		current_exp = ""
+	if event in ["Clear"]:
+		current_exp = ""
+		window["-TEXT-"].update("")
 window.close()
