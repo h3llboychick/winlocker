@@ -15,8 +15,20 @@ TODO list:
 		2.1. Create basic scheme of working. --DONE--
 		2.2. Populate scheme with new details and amendments.
 	3. Learn how to create basic GUI with PySimpleGUI.
-		3.1 Install PySimpleGUI.
-		3.2 Learn how to create basic elements and layout them.
-		3.3 Learn how to customize elements. 
-			3.3.1 sg.set_theme method - (sg.set_theme("sdfasfasfasfd") to get all availible themes).
-			3.3.2 sg.set_options(global, file-level options) - (options list - https://www.pysimplegui.org/en/latest/call%20reference/#application-wide-configuration-settings-set_options-etc).
+		3.1. Install PySimpleGUI.
+		3.2. Learn how to create basic elements.
+			3.2.1. Learn sg.Text(), sg.Button(), sg.Input() basic elements
+		3.3. Learn how to layout elements.
+			3.3.1. Adjust element's positiong through margin, pad, justification atributes. --DONE--
+			3.3.2. Use sg.Push() and sg.VPush() to centrify elements. --DONE--
+			3.3.3. Set global alignmnet rules with sg.Window's element_justification attribute. --DONE--
+			3.3.4. Use expand_x/expand_y, + size for setting elements size/scaling them. --DONE--
+		3.4 Learn how to customize elements. 
+			3.4.1. sg.set_theme method - (sg.set_theme("sdfasfasfasfd") to get all availible themes).
+			3.4.2. sg.set_options(global, file-level options) - (options list - https://www.pysimplegui.org/en/latest/call%20reference/#application-wide-configuration-settings-set_options-etc).
+			3.4.3. Customizing elements thorugh their options - (look here - https://www.pysimplegui.org/en/latest/call%20reference/ (CTRL+F + element to look at)) 
+		--TODO--
+			1. Write about how to interact with elemens within event-loop system
+			2. Explain workflow of the main flow
+			3. Add basic stuff about element customization.
+			4. Start chapter 4(about creating graphical backbone of the project)
