@@ -15,7 +15,7 @@ def create_window():
 		[sg.VPush()]
 	]
 
-	window = sg.Window("Stopwatch", layout, size = (300, 300), no_titlebar = False, element_justification = 'center')
+	window = sg.Window("Stopwatch", layout, size = (300, 300), no_titlebar = True, element_justification = 'center')
 	return window
 
 window = create_window()
